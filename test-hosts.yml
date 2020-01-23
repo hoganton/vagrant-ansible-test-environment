@@ -1,0 +1,58 @@
+---
+
+all:
+  children:
+
+    # geo location groups
+    tech:
+      vars:
+        domain: test.network.com
+      hosts:
+        at-ansible-master:
+        at-ubuntu-14-node:
+        at-ubuntu-16-node:
+        at-ubuntu-18-node:
+        at-centos-6-node:
+        at-centos-7-node:
+
+    # service groups
+
+    vagrants:
+      hosts:
+        at-ansible-master:
+        at-ubuntu-14-node:
+        at-ubuntu-16-node:
+        at-ubuntu-18-node:
+        at-centos-6-node:
+        at-centos-7-node:
+
+    # general server type groups
+    app:
+      hosts:
+        at-ubuntu-14-node:
+        at-ubuntu-16-node:
+        at-ubuntu-18-node:
+    lb:
+      hosts:
+        at-ubuntu-14-node:
+        at-ubuntu-16-node:
+        at-ubuntu-18-node:
+    vds:
+      hosts:
+        at-ubuntu-14-node:
+        at-ubuntu-16-node:
+        at-ubuntu-18-node:
+    web:
+      hosts:
+        at-ubuntu-14-node:
+        at-ubuntu-16-node:
+        at-ubuntu-18-node:
+    syscheckers:
+      hosts:
+        at-ubuntu-14-node:
+        at-ubuntu-16-node:
+        at-ubuntu-18-node:
+    mon:
+      hosts:
+        at-centos-6-node:
+        at-centos-7-node:
